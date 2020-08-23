@@ -1,0 +1,26 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 25px;
+}
+
+.initial-content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 80vh;
+}
+
+.inital-content h2, .initial-content p {
+    text-align: center;
+}
