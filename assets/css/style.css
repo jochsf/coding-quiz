@@ -9,7 +9,7 @@ header {
     margin: 0px 25px;
 }
 
-.initial-content {
+.main-content, .initial-content, .quiz-content{
     display: flex;
     flex: 1;
     flex-wrap: wrap;
@@ -21,6 +21,18 @@ header {
     height: 80vh;
 }
 
-.inital-content h2, .initial-content p {
+.initial-content 
+
+.main-content h2, .main-content p {
     text-align: center;
+}
+
+.btn {
+    justify-content: center;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 0px auto;
+    /* font-weight: bold; */
+    background-color: rgb(45, 112, 255);
+    color: white;
 }
