@@ -28,8 +28,8 @@ var currentScore = document.querySelector(".current-score");
 var form = document.querySelector("#form")
 // high score
 var highScore = 0;
-var storedHighScore;
-var storedInitials;
+var storedHighScore = 0;
+var storedInitials = "XX";
 
 
 var questions = [
@@ -175,10 +175,13 @@ var saveScore = function() {
         event.preventDefault();
         alert("Please enter your initals")
     } else {
-        if (timeLeft > highScore) {
+        if (timeLeft > storedHighScore) {
             localStorage.setItem("initials", name);
             localStorage.setItem("highscore", timeLeft)
             console.log("thanks for playing")
+        } else {
+            storedHighScore = highScore;
+            storedInitials = name;
         }
     }
     
