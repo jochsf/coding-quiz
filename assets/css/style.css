@@ -9,7 +9,7 @@ header {
     margin: 0px 25px;
 }
 
-.main-content, .initial-content, .quiz-content{
+.main-content, .initial-content, .quiz-content, .end-game-screen{
     display: flex;
     flex: 1;
     flex-wrap: wrap;
@@ -35,4 +35,33 @@ header {
     /* font-weight: bold; */
     background-color: rgb(45, 112, 255);
     color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.answer-container {
+    flex: 1;
+    padding: 0px;
+}
+
+.answer-btn {
+    margin: 4px;
+    color: white;
+    flex: 1 100%;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+}
+
+.correct-alert {
+    flex: 1 100%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.end-game-screen h1, .end-game-screen p, .end-game-screen form {
+    flex: 1 100%;
+    text-align: center;
 }

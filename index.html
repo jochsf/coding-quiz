@@ -5,21 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="assets/css/style.css" </head>
 
 <body>
     <header>
-        <h3>High Score: <span class="display-highscore">0</span></h3>
+        <h3>High Score: <span id="display-highscore">0</span>(<span id="name-highscore"></span>)</h3>
         <h3>Time: <span class="display-time">0</span></h3>
     </header>
 
     <section class="main-content">
-        <div class="initial-content">
+        <div class="initial-content" id="initial-content">
             <h1 class="quiz-heading">Coding Quiz Challenge</h1>
             <p class="quiz-description">Try to answer the following code-related questions within the time limit. Keep
                 in mind that incorrect answers will penalize your score/time by 10 seconds.</p>
             <button class="btn" id="start-btn">Start Quiz</button>
+        </div>
+        <!-- hidden quiz box -->
+        <div class="quiz-content hidden" id="quiz-content">
+            <h1 class="question-container"></h1>
+            <ol class="answer-container" id="answer-container">
+            </ol>
+            <p class="correct-alert"></p>
+        </div>
+        <!-- hidden end game screen -->
+        <div class="end-game-screen hidden" id="end-game-screen">
+            <h1 class="end-game-heading">Game Over!</h1>
+            <p class="show-score">Your score is <span id="current-score"></span></p>
+            <form id="form" onsubmit="return false">
+                <label for="initials">Enter your initials</label>
+                <input type="text" name="initials" id="initials" placeholder="Initials">
+                <input type="submit" value="Submit"></button>
+            </form>
         </div>
     </section>
 
